@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-white: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 75px;
+}
+body{
+    font-weight: 400px;
+    overflow-x: hidden;
+    position: relative;
+    background-color: black;
+    color: white;
+
+}   
+
+/*we added this to make the links not jump when we hover over the navbar */
+.navbar-nav > li > a {
+    border-top: 3px solid #1C2833;
+
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover {
+    border-top: 3px solid var(--primary-white);
+
+}
+
+.header-container{
+    background: linear-gradient(to right, darkred, #00AAFF);
+    background-size: cover;
+    background-position: center;    
+    height: 90vh;
+}
+
+.header-intro{
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; /*this property is blocking the hover effect in the navbar*/
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.header-intro > h1 {
+    color: white;
+    font-style: italic;
+}
+
+.typed-text {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.viewme-btn{
+    position: absolute;
+    left: 45.5%;
+    text-decoration: none;
+    width: 120px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid darkred;
+    padding: 0.9375em 2.1875em;
+    border-radius: 20px;
+    margin-top: 290px;
+    color: whitesmoke;
+    background-color: darkred;
+    transition: 0.7s ease;
+
+}
+.viewme-btn:hover{
+    background-color: whitesmoke;
+    color: darkred;
+    transform: scale(1.1);
+    font-weight: bolder;
+    
+}
+
+.nav-link {
+    margin-bottom: 10px;
+}
