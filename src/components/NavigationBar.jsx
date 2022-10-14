@@ -8,8 +8,10 @@ import icon2 from "../components/img/github-svgrepo-com.svg";
 import icon3 from "../components/img/instagram-svgrepo-com.svg";
 
 
+
 function NavigationBar () {
 
+    // const navigate = useNavigate();
 
     //to know where the hell you are
     const [place, setPlace] = useState("home")
@@ -21,23 +23,23 @@ function NavigationBar () {
   //navbar-dark => color is white and navbar-light => font color is black
   return (
     <div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <Container style={{padding: "5px"}}>
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <a className="navbar-brand" href="#">Hady Alkadri</a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#HOME">Home</a>
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav ms-auto">
+      <li className="nav-item active">
+        <a className="nav-link" href="#HOME">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
+      <li className="nav-item">
+        <a className="nav-link" href="#skills">Skills</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#experience">Experience</a>
+      <li className="nav-item">
+        <a className="nav-link" href="#experience">Experience</a>
       </li>
     </ul>
     

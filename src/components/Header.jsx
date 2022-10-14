@@ -12,12 +12,12 @@ const Header = () => {
                 </h1>
                 <Typed 
                     className='typed-text'
-                    strings={["Services: ","Web Development", "Music Compostion","SAP Consultancy", "ERP"]}
+                    strings={["Services: ","Web Development", "Music Compostion","SAP Consultancy", "ERP Design"]}
                     typeSpeed={40}
                     backSpeed={60}
                     loop
                 />
-                <a href='#' className='viewme-btn'>View My Work</a>
+                <a href='https://github.com/hadyalkadri' target="_blank" rel="noreferrer noopener" className='viewme-btn'>View My Work</a>
             </div>
         </div>
     </div>

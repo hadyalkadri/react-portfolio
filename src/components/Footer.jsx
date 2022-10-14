@@ -4,16 +4,14 @@ import {FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 function Footer() {
   return (
     <div>
-    <span className='navBar-social'>
+    <span className='footerMain'>
     <div>
-      <a className="nav-link fixed-bottom d-flex justify-content-center" href="#linkedin"><FaGithub /></a>
-      <a className="nav-link fixed-bottom d-flex justify-content-center" style={{marginRight: "35px"}} href="#github"><FaLinkedin /></a>
-      <a className="nav-link fixed-bottom d-flex justify-content-center" style={{marginLeft: "35px"}} href="#instagram"><FaInstagram /></a>
-      </div>
+      <a className="nav-link fixed-bottom d-flex" style={{marginLeft: "575px"}} href="https://github.com/hadyalkadri"><FaGithub /></a>
+      <a className="nav-link fixed-bottom d-flex" style={{marginLeft: "635px"}} href="https://www.linkedin.com/in/hady-alkadri-7813ab18b/"><FaLinkedin /></a>
+      <a className="nav-link fixed-bottom d-flex" style={{marginLeft: "695px"}} href="https://www.instagram.com/hadyalkaderi/"><FaInstagram /></a>
+    </div>
     </span>
     </div>
-    //
-    //
   )
 }
 

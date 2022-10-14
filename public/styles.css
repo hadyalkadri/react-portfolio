@@ -16,11 +16,14 @@ html{
 body{
     font-weight: 400px;
     overflow-x: hidden;
-    position: relative;
-    background-color: black;
+    background: linear-gradient(to right, darkred, #00AAFF);
     color: white;
 
-}   
+}  
+
+.navbar{
+    z-index: 2;
+}
 
 /*we added this to make the links not jump when we hover over the navbar */
 .navbar-nav > li > a {
@@ -35,9 +38,15 @@ body{
 
 .header-container{
     background: linear-gradient(to right, darkred, #00AAFF);
-    background-size: cover;
+    background-size: contain;
     background-position: center;    
     height: 90vh;
+    padding-top: 0px;
+    margin-top: -500px;
+    
+
+    
+    
 }
 
 .header-intro{
@@ -51,7 +60,7 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding-top: 50px;
+    
     
 }
 
@@ -89,6 +98,106 @@ body{
     
 }
 
+
+
 .nav-link {
     margin-bottom: 10px;
+}
+
+#tsparticles{
+    z-index: 1;
+}
+
+.cardConatiner{
+    position: relative;
+    top: 700px;
+    padding-left: 28rem;
+    margin-bottom: 10rem;
+    
+    
+     
+    
+}
+
+.skillsHd{
+    font-size: 5rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image:  linear-gradient(to right, gray, #00AAFF);
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    left: 105px;
+}
+
+.Card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    opacity: 65%;
+    background-color: #167AD5;
+    text-align: center;
+    padding: 10px;
+    width: 22rem;
+    height: 12rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    color: #fff;
+    
+    
+}
+
+.Card:hover{
+    box-shadow: 0 5px 10px 0  rgba(0, 0, 0, 2);
+    transform: scale(110%);
+    transition: 0.2s;
+}
+
+.Card > p{
+    margin-top: 37px;
+    background-color: darkblue;
+    width: 14rem;
+    margin: auto;
+
+
+}
+
+.btn{
+    position: absolute;
+    
+}
+
+#experience{
+    display: flex;
+    background: linear-gradient(to right, darkred, #00AAFF);
+    position: relative;
+    top: 50rem;
+    height: 40rem;
+    border-radius: 5%;
+
+
+}
+
+.exCard{
+    width: 35rem;
+    height: 30rem;
+    padding: 10px;
+    position: relative;
+    left: 21rem;
+    top: 43px;
+    background-color: steelblue;
+    opacity: 85%;
+    box-shadow: 0 5px 10px 0;
+
+}
+
+.experienceIMG{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+    left: 300px;
+    box-shadow: 0 8px 16px 0;
 }
