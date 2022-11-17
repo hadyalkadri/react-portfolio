@@ -6,10 +6,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import icon1 from "../components/img/linkedin-svgrepo-com.svg";
 import icon2 from "../components/img/github-svgrepo-com.svg";
 import icon3 from "../components/img/instagram-svgrepo-com.svg";
+import {Link} from 'react-router-dom';
 
 
-
-function NavigationBar () {
+function NavigationBar ({setSkill, setExp}) {
 
     // const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ function NavigationBar () {
   //navbar-dark => color is white and navbar-light => font color is black
   return (
     <div>
-  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-custom">
   <Container style={{padding: "5px"}}>
   <a className="navbar-brand" href="#">Hady Alkadri</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +33,13 @@ function NavigationBar () {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ms-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="#HOME">Home</a>
+        <a className="nav-link" href="#HOME" onClick={() => {setSkill(true); setExp(false)}}><Link className='skills_link' to='/'>Home</Link></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#skills">Skills</a>
+        <a className="nav-link" href="#skills" onClick={() => {setSkill(false); setExp(false)}}><Link className = 'skills_link' to='/skills'>Skills</Link></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#experience">Experience</a>
+        <a className="nav-link" href="#experience" onClick={() => setExp(true)}><Link className = 'skills_link' to='/experience'>Experience</Link></a>
       </li>
     </ul>
     
