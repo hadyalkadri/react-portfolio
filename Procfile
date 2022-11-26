@@ -1,1 +1,1 @@
-web: npm start server-api/app.js
+web: nodemon server-api/app.js
