@@ -9,7 +9,7 @@ require('dotenv/config');
 
 const hostname = 'localhost';
 //we added the process.env.PORT so that when in heroku it will use heroku's designated port
-var port = process.env.PORT || 3002;
+const port = process.env.PORT || 3002;
 
 
 // let datas = [];
