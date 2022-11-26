@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const dataForm = require('./models/data')
 require('dotenv/config');
 
-const hostname = 'localhost';
+const hostname = '0.0.0.0';
 //we added the process.env.PORT so that when in heroku it will use heroku's designated port
 const port = process.env.PORT || 3002;
 
