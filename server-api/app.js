@@ -45,26 +45,26 @@ app.get('/experience', (req, res) => {
 
 
 
-app.post('/emails', (req, res) => {
-    const data = new dataForm({
-        username: req.body.username,
-        email: req.body.email,
-        message: req.body.message
-    })
+//app.post('/emails', (req, res) => {
+    //const data = new dataForm({
+        //username: req.body.username,
+        //email: req.body.email,
+        //message: req.body.message
+    //})
 
-    data.save()
-    .then((data) => {
-        res.json(data)
-    })
-    .catch((err) => {
-        console.log(err)
-    })
+    //data.save()
+    //.then((data) => {
+      //  res.json(data)
+    //})
+    //.catch((err) => {
+     //   console.log(err)
+    //})
     // const data = req.body
     // datas.push(data);
     // res.sendStatus = 200;
     // res.send('Data was successfully added to the database.')
     // res.end()
-})
+//})
 
 //this where we want to acces the posted data
 app.get('/emails', (req, res) => {
@@ -75,9 +75,9 @@ app.get('/emails', (req, res) => {
 
 
 //connct to the database
-mongoose.connect(process.env.DB_CONNECTION, () => {
-    console.log('Connected to the database')
-})
+//mongoose.connect(process.env.DB_CONNECTION, () => {
+//    console.log('Connected to the database')
+//})
 
 app.listen(port, hostname, () => {
     console.log(`Server is running at http://${hostname}:${port}`);
