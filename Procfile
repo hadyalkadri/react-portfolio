@@ -1,1 +1,1 @@
-web: node server-api/app.js
+web: npm start server-api/app.js
