@@ -16,5 +16,12 @@
     "heroku": "^7.66.4",
     "mongoose": "^6.7.2",
     "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hadyalkadri/react-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hadyalkadri/react-portfolio/issues"
   }
 }
