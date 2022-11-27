@@ -82,7 +82,7 @@ app.use(express.static(path.join(__dirname + "/public")))
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirnam, '/public, 'index.html))
-
+})
     
 app.listen(port, hostname, () => {
     console.log(`Server is running at http://${hostname}:${port}`);
